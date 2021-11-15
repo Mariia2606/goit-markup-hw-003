@@ -299,12 +299,19 @@ body {
 
 /*--------------POTFOLIO---------*/
 /*Bottoms*/
+.after-portfolio-container {
+  padding-bottom: 95px;
+}
 .botton-flex {
   display: flex;
   align-items: center;
-
+  padding-right: 240px;
+  padding-left: 240px;
   padding-top: 100px;
   padding-bottom: 55px;
+}
+.after-botton {
+  padding-bottom: ;
 }
 .button-list {
   font-family: Roboto;
@@ -318,7 +325,9 @@ body {
   width: 145px;
   height: 38px;
   border-radius: 4px;
+  margin-right: 10px;
 }
+
 .button-list:active,
 .button-list:focus {
   background: var(--acent-color--);
@@ -331,6 +340,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.project-item {
+  margin-bottom: 30px;
+}
 .project-title {
   font-weight: 700;
   font-size: 18px;
@@ -338,10 +350,13 @@ body {
   letter-spacing: 0.06em;
   color: var(--title-color--);
 }
+.project-conteiner {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
 .project-pre-tittle {
   padding-top: 20px;
 }
-
 .project-text {
   font-weight: 500;
   font-size: 16px;
