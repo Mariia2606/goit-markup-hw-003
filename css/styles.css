@@ -32,12 +32,12 @@ button {
   padding-right: 15px;
   margin: 0 auto;
 }
-.pre-conteiner {
+.section {
   padding-top: 95px;
 }
-.after-conteiner {
+/*.section {
   padding-bottom: 95px;
-}
+}*/
 .after-tittle {
   padding-bottom: 50px;
 }
@@ -338,23 +338,17 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.project-item {
-  margin-bottom: 30px;
-}
+
 .project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color--);
-}
-.project-conteiner {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-.project-pre-tittle {
+  margin-left: 25px;
   padding-top: 20px;
 }
+
 .project-text {
   font-weight: 500;
   font-size: 16px;
@@ -363,7 +357,13 @@ body {
   color: var(--text-color--);
   padding-top: 5px;
   padding-bottom: 20px;
+  margin-bottom: 30px;
+  margin-left: 25px;
 }
+.project-text:nth-child(n + 6) {
+  margin-bottom: 0;
+}
+
 .button .button-list.current {
   background: var(--acent-color--);
   color: var(--second-title-color--);
