@@ -29,11 +29,15 @@
 
         <nav>
           <ul class="header-navigation list">
-            <li><a class="header-link link current" href="">Студия</a></li>
-            <li>
+            <li class="header-item">
+              <a class="header-link link current" href="">Студия</a>
+            </li>
+            <li class="header-item">
               <a class="header-link link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li><a class="header-link link" href="">Контакты</a></li>
+            <li>
+              <a class="header-link link" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
         <div class="header-conect">
@@ -55,7 +59,7 @@
 
     <main>
       <section class="hero">
-        <div class="container hero-conteiner">
+        <div class="hero-conteiner">
           <h1 class="hero-title">
             Эффективные решения для вашего бизнеса
           </h1>
@@ -69,7 +73,7 @@
         <div class="conteiner">
           <h2 class="featurs-none">Особенности</h2>
           <ul class="featurs-list list">
-            <li>
+            <li class="featurs-item">
               <h3 class="featurs-title">Внимание к деталям</h3>
               <p class="featurs-text">
                 Идейные соображения, а также начало повседневной работы по
@@ -104,7 +108,7 @@
 
       <section class="work section">
         <div class="conteiner after-conteiner">
-          <h2 class="title after-tittle">Чем мы занимаемся</h2>
+          <h2 class="title">Чем мы занимаемся</h2>
           <ul class="work-list list">
             <li class="work-item">
               <img src="images/comp.jpg" alt="компьютер" width="370" />
@@ -122,44 +126,56 @@
       <section class="comand section">
         <div class="conteiner after-conteiner">
           <h2 class="title after-tittle">Наша команда</h2>
-          <ul class="comand-list list">
-            <li class="comand-item">
-              <img
-                src="images/img4.jpg"
-                alt="фото Игоря Демьяненко"
-                width="270"
-              />
-              <h3 class="comand-member">Игорь Демьяненко</h3>
-              <p lang="en" class="comand-speciality">
-                Product Designer
-              </p>
-            </li>
-            <li class="comand-item">
-              <img src="images/img3.jpg" alt="фото Ольга Репина" width="270" />
-              <h3 class="comand-member">Ольга Репина</h3>
-              <p lang="en" class="comand-speciality">
-                Frontend Developer
-              </p>
-            </li>
-            <li class="comand-item">
-              <img
-                src="images/img2.jpg"
-                alt="фото Николай Тарасов"
-                width="270"
-              />
-              <h3 class="comand-member">Николай Тарасов</h3>
-              <p lang="en" class="comand-speciality">
-                Marketing
-              </p>
-            </li>
-            <li class="comand-item">
-              <img src="images/img.jpg" alt="фото Михаил Ермаков" width="270" />
-              <h3 class="comand-member">Михаил Ермаков</h3>
-              <p lang="en" class="comand-speciality">
-                UI Designer
-              </p>
-            </li>
-          </ul>
+          <div class="comand-container">
+            <div class="comand-flex">
+              <ul class="comand-list list">
+                <li class="comand-item comand-flex-element">
+                  <img
+                    src="images/img4.jpg"
+                    alt="фото Игоря Демьяненко"
+                    width="270"
+                  />
+                  <h3 class="comand-member">Игорь Демьяненко</h3>
+                  <p lang="en" class="comand-speciality">
+                    Product Designer
+                  </p>
+                </li>
+                <li class="comand-item comand-flex-element">
+                  <img
+                    src="images/img3.jpg"
+                    alt="фото Ольга Репина"
+                    width="270"
+                  />
+                  <h3 class="comand-member">Ольга Репина</h3>
+                  <p lang="en" class="comand-speciality">
+                    Frontend Developer
+                  </p>
+                </li>
+                <li class="comand-item comand-flex-element comand-flex-element">
+                  <img
+                    src="images/img2.jpg"
+                    alt="фото Николай Тарасов"
+                    width="270"
+                  />
+                  <h3 class="comand-member">Николай Тарасов</h3>
+                  <p lang="en" class="comand-speciality">
+                    Marketing
+                  </p>
+                </li>
+                <li class="comand-item">
+                  <img
+                    src="images/img.jpg"
+                    alt="фото Михаил Ермаков"
+                    width="270"
+                  />
+                  <h3 class="comand-member">Михаил Ермаков</h3>
+                  <p lang="en" class="comand-speciality">
+                    UI Designer
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -171,7 +187,7 @@
         <address class="address">
           <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
           <ul class="list">
-            <li>
+            <li class="footer-item">
               <a class="footer-conacts link" href="mailto:info@example.com"
                 >info@example.com</a
               >
