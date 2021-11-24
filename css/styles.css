@@ -89,8 +89,6 @@ body {
 }
 .header-navigation {
   display: flex;
-  padding-bottom: 35px;
-  padding-top: 35px;
 }
 
 .header-conect {
@@ -109,8 +107,12 @@ body {
 .header-item {
   margin-right: 50px;
   display: block;
+  padding-bottom: 35px;
+  padding-top: 35px;
 }
-
+.header-item:last-child {
+  margin-right: 0;
+}
 .header-link:hover,
 .header-link:focus {
   color: var(--acent-color--);
@@ -145,23 +147,22 @@ body {
 .hero {
   background-color: var(--second-bg-color--);
   text-align: center;
-}
-.hero-conteiner {
   padding-bottom: 200px;
   padding-top: 200px;
 }
+
 .hero-title {
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-  max-width: 1200px;
+  width: 696px;
+  margin: 0 auto;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--second-title-color--);
-  margin-left: 120px;
 }
 
 .btn-conteiner {
@@ -242,6 +243,9 @@ body {
 .work-item:last-child {
   margin-right: 0;
 }
+.work.section {
+  padding-top: 0;
+}
 /*--------------COMAND----------------*/
 .comand {
   background: var(--bg-color--);
@@ -257,17 +261,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   color: var(--title-color--);
 }
-.comand-container {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-left: auto;
-}
+
 .comand-flex {
   display: flex;
   flex-wrap: wrap;
@@ -298,12 +296,11 @@ body {
 }
 
 /*---------------FOOTER----------*/
-.footer {
-  background-color: var(--second-bg-color--);
-}
+
 .footer-conteiner {
   padding-bottom: 60px;
   padding-top: 60px;
+  background-color: var(--second-bg-color--);
 }
 
 .address-text {
@@ -313,7 +310,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--second-title-color--);
   margin-bottom: 10px;
-  margin-top: 20px;
+}
+.footerweblogo {
+  margin-bottom: 20px;
 }
 .footer-conacts {
   font-style: normal;
@@ -373,28 +372,27 @@ body {
 }
 
 /*projects*/
-.project-container {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-left: auto;
-}
+
 .project-flex {
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
 }
 .flex-element {
-  width: 380px;
+  display: flex;
+  flex-wrap: wrap;
   background: #ffffff;
-  border: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   margin-right: 30px;
   margin-bottom: 30px;
+  flex-basis: calc(100% / 3 - 30px);
 }
 .flex-element:nth-child(3n) {
   margin-right: 0;
 }
-.flex-element:nth-child(n + 3) {
+.flex-element:nth-child(n + 7) {
   margin-bottom: 0;
 }
 .project-title {
