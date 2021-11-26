@@ -103,12 +103,14 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color--);
+
+  padding-bottom: 35px;
+  padding-top: 35px;
 }
+
 .header-item {
   margin-right: 50px;
   display: block;
-  padding-bottom: 35px;
-  padding-top: 35px;
 }
 .header-item:last-child {
   margin-right: 0;
@@ -126,7 +128,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   margin-right: 50px;
-
   color: var(--text-color--);
 }
 .header-tel {
@@ -163,6 +164,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--second-title-color--);
+  margin-bottom: 50px;
 }
 
 .btn-conteiner {
@@ -260,10 +262,14 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 30px;
+
   margin-bottom: 10px;
 
   color: var(--title-color--);
+}
+.command-content {
+  margin-top: 30px;
+  padding-bottom: 30px;
 }
 
 .comand-flex {
@@ -288,18 +294,11 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.comand-item :last-child {
-  margin-right: 0;
-}
-.comand-speciality {
-  padding-bottom: 30px;
-}
 
 /*---------------FOOTER----------*/
 
 .footer-conteiner {
   padding-bottom: 60px;
-  padding-left: 215px;
   padding-top: 60px;
   background-color: var(--second-bg-color--);
 }
@@ -339,7 +338,9 @@ body {
 
 /*--------------POTFOLIO---------*/
 /*Bottoms*/
-
+.header-navigation .header-link.current {
+  color: var(--acent-color--);
+}
 .botton-flex {
   display: flex;
   align-items: center;
@@ -364,9 +365,11 @@ body {
   border-radius: 4px;
 }
 .button-item {
-  margin-right: 6px;
+  margin-right: 8px;
 }
-
+.button-item:last-child {
+  margin-right: 0px;
+}
 .button-list:active,
 .button-list:focus {
   background: var(--acent-color--);
@@ -375,37 +378,12 @@ body {
 
 /*projects*/
 
-.project-flex {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-}
-.flex-element {
-  display: flex;
-  flex-wrap: wrap;
-  background: #ffffff;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  flex-basis: calc(100% / 3 - 30px);
-}
-.flex-element:nth-child(3n) {
-  margin-right: 0;
-}
-.flex-element:nth-child(n + 7) {
-  margin-bottom: 0;
-}
 .project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color--);
-  margin-top: 20px;
-  margin-left: 25px;
-  margin-bottom: 5px;
 }
 
 .project-text {
@@ -414,11 +392,41 @@ body {
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--text-color--);
-  margin-left: 25px;
-  margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 .button .button-list.current {
   background: var(--acent-color--);
   color: var(--second-title-color--);
+}
+.project-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-item {
+  width: 370px;
+}
+.project-card > .project-item {
+  flex-basis: calc(100% / 3 - 30);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+/*
+  */
+
+.project-item:nth-child(3n) {
+  margin-right: 0;
+}
+.project-item:nth-child(n + 7) {
+  margin-bottom: 0;
+}
+/*.project-item .card-tumb [src=""] {
+  margin-bottom: 20px;
+  outline: 1px solid tomato;
+}*/
+.card-content {
+  padding: 20px 24px;
+  border-left: 1px solid var(--bg-portfolio--);
+  border-right: 1px solid var(--bg-portfolio--);
+  border-bottom: 1px solid var(--bg-portfolio--);
 }
